@@ -15,6 +15,6 @@ runs:
         node-version: 20
         cache: 'pnpm'
 
-    - name: Install dependencies 🔧
+    - name: Install dependencies 🔧 📦️
       shell: bash
-      run: pnpm install
+      run: pnpm install --frozen-lockfile

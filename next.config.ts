@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
+const repo = "nextjs-page";
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
+  output: "export",
 };
 
 export default nextConfig;

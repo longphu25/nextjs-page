@@ -85,6 +85,8 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
 
       - name: Build with Next.js 🔨 🏗️
+        env:
+          PAGES_BASE_PATH: ${{ github.event.repository.name }}
         run: pnpm build
 
       - name: Upload artifact 📡

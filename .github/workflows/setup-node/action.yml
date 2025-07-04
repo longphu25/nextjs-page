@@ -16,4 +16,5 @@ runs:
         cache: 'pnpm'
 
     - name: Install dependencies 🔧 📦️
+      shell: bash
       run: pnpm install
